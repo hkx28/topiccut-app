@@ -288,21 +288,6 @@ const ContentSummarizer = ({ isDarkMode, toggleDarkMode }) => {
                 <span style={{ fontWeight: '900' }}>TopicCut</span>
               </h1>
             </div>
-            
-            {/* 다크모드 토글 - 오른쪽 */}
-            {toggleDarkMode && (
-              <button
-                onClick={toggleDarkMode}
-                className="p-2 bg-slate-100 dark:bg-gray-700 rounded-full hover:bg-slate-200 dark:hover:bg-gray-600 transition-all duration-300"
-                title={isDarkMode ? '라이트 모드로 전환' : '다크 모드로 전환'}
-              >
-                {isDarkMode ? (
-                  <Sun className="w-5 h-5 text-yellow-500" />
-                ) : (
-                  <Moon className="w-5 h-5 text-slate-600" />
-                )}
-              </button>
-            )}
           </div>
           <p className="text-center text-slate-600 dark:text-gray-300 mt-2 transition-colors duration-300">AI Content Analyzer</p>
         </div>

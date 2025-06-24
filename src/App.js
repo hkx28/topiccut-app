@@ -88,7 +88,7 @@ function App() {
                 <img 
                   src="/jose_logo.png" 
                   alt="로고"
-                  className="w-6 h-6 object-contain"
+                  className="w-full h-full object-cover"
                 />
               </div>
               <div>
