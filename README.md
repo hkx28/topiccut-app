@@ -1,70 +1,133 @@
-# Getting Started with Create React App
+# TopicCut 🎯
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+AI-powered content summarizer with advanced news analysis capabilities.
 
-## Available Scripts
+## ✨ Features
 
-In the project directory, you can run:
+- 🌙 **Dark/Light Mode Toggle** - Seamless theme switching
+- 📝 **Three Content Types**:
+  - **Basic**: General content summarization with marketing focus
+  - **News**: Professional journalism-style analysis with 5W1H structure
+  - **Safety**: Comprehensive safety guides with practical tips
+- 📁 **File Upload Support** - Process .vtt, .pdf, .txt files
+- ⚡ **Real-time Analysis** - Instant AI-powered content processing
+- 📋 **Copy-to-Clipboard** - Easy sharing and workflow integration
+- 🔐 **Secure Authentication** - AWS Cognito integration
 
-### `npm start`
+## 🛠 Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Frontend**: React 19, Tailwind CSS
+- **Backend**: AWS Lambda, API Gateway
+- **Storage**: AWS S3
+- **AI**: AWS Bedrock (Claude 3.5 Haiku)
+- **Authentication**: AWS Cognito
+- **Infrastructure**: AWS CloudFormation
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Getting Started
 
-### `npm test`
+### Prerequisites
+- Node.js 18+ 
+- AWS Account (for backend services)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `npm run build`
+```bash
+# Clone repository
+git clone https://github.com/hkx28/topiccut-app.git
+cd topiccut-app
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Install dependencies
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Start development server
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Environment Setup
 
-### `npm run eject`
+Create `.env` file in root directory:
+```env
+REACT_APP_API_URL=your_api_gateway_url
+REACT_APP_COGNITO_DOMAIN=your_cognito_domain
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📁 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+topiccut-app/
+├── src/
+│   ├── components/
+│   │   └── ContentSummarizer.js
+│   ├── App.js
+│   └── index.js
+├── public/
+├── aws/
+│   ├── Content_Summarizer_v2.yaml
+│   └── Content_Summarizer_v3.yaml
+└── README.md
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🏗 AWS Infrastructure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Deploy using CloudFormation:
 
-## Learn More
+```bash
+# Deploy backend infrastructure
+aws cloudformation create-stack \
+  --stack-name topiccut-backend \
+  --template-body file://aws/Content_Summarizer_v3.yaml \
+  --capabilities CAPABILITY_NAMED_IAM
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📖 Usage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Authentication**: Login with AWS Cognito
+2. **Content Input**: Choose between text input or file upload
+3. **Content Type**: Select analysis type (Basic/News/Safety)
+4. **Analysis**: Click "AI 요약 생성" for instant processing
+5. **Results**: View structured summaries with copy functionality
 
-### Code Splitting
+## 🎯 Content Types
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+| Type | Purpose | Output Style |
+|------|---------|--------------|
+| **Basic** | Marketing & Social Media | Engaging, shareable content |
+| **News** | Journalism & Reporting | Professional 5W1H structure |
+| **Safety** | Safety Protocols | Comprehensive guides with tips |
 
-### Analyzing the Bundle Size
+## 🔧 Development
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+# Development mode
+npm start
 
-### Making a Progressive Web App
+# Build for production
+npm run build
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+# Run tests
+npm test
+```
 
-### Advanced Configuration
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+This project is licensed under the MIT License.
 
-### Deployment
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Fork the repository
+2. Create feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
+5. Open Pull Request
 
-### `npm run build` fails to minify
+## 📞 Support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For support and questions:
+- Email: hkx228@gmail.com
+- Issues: [GitHub Issues](https://github.com/hkx28/topiccut-app/issues)
+
+---
+
+**Built with using AWS and React**
+EOF
+```
