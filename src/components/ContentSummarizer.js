@@ -630,7 +630,7 @@ const ContentSummarizer = ({ isDarkMode, toggleDarkMode }) => {
       <footer className="bg-slate-800 dark:bg-gray-950 text-white py-8 transition-colors duration-300">
         <div className="container mx-auto px-4 text-center">
           <p className="text-slate-300 dark:text-gray-400 transition-colors duration-300">
-            © Copyright 2025. MEGAZONECLOUD Corp. All rights reserved.
+            Originally demonstrated via MEGAZONECLOUD. © 2025 Joseph. All rights reserved.
           </p>
         </div>
       </footer>

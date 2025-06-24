@@ -86,7 +86,7 @@ function App() {
             <div className="flex items-center gap-4">
               <div className="w-10 h-10 bg-white/20 dark:bg-white/10 rounded-full flex items-center justify-center backdrop-blur">
                 <img 
-                  src="/mzc.png" 
+                  src="/jose_logo.png" 
                   alt="로고"
                   className="w-6 h-6 object-contain"
                 />
@@ -150,7 +150,7 @@ function App() {
           {/* 로고 */}
           <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
             <img 
-              src="/mzc.png" 
+              src="/jose_logo.png" 
               alt="로고"
               className="w-12 h-12 object-contain"
             />
