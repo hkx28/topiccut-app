@@ -277,6 +277,13 @@ const ContentSummarizer = ({ isDarkMode, toggleDarkMode }) => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
             <div className="flex items-center justify-center flex-1">
+              <div className="w-10 h-10 rounded-full overflow-hidden bg-white dark:bg-gray-700 shadow-md mr-3 flex items-center justify-center">
+                <img 
+                  src="/jose.png" 
+                  alt="로고"
+                  className="w-8 h-8 object-cover"
+                />
+              </div>
               <h1 className="text-3xl font-bold text-slate-800 dark:text-white transition-colors duration-300">
                 <span style={{ fontWeight: '900' }}>TopicCut</span>
               </h1>

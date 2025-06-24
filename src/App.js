@@ -143,7 +143,7 @@ function App() {
           {/* 로고 */}
           <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 rounded-full mx-auto mb-6 shadow-lg overflow-hidden">
             <img 
-              src="/manager.png" 
+              src="/jose_logo.png" 
               alt="로고"
               className="w-full h-full object-cover"
             />
