@@ -84,13 +84,6 @@ function App() {
         <header className="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-800 dark:from-gray-900 dark:via-blue-900 dark:to-purple-900 text-white p-5 shadow-lg">
           <div className="max-w-6xl mx-auto flex justify-between items-center">
             <div className="flex items-center gap-4">
-              <div className="w-10 h-10 bg-white/20 dark:bg-white/10 rounded-full flex items-center justify-center backdrop-blur">
-                <img 
-                  src="/jose_logo.png" 
-                  alt="로고"
-                  className="w-full h-full object-cover"
-                />
-              </div>
               <div>
                 <p className="text-sm opacity-90">
                   안녕하세요, {auth.user?.profile.email}님!
@@ -148,11 +141,11 @@ function App() {
 
         <div className="bg-white dark:bg-gray-900 p-12 rounded-3xl shadow-2xl text-center max-w-md w-full backdrop-blur">
           {/* 로고 */}
-          <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
+          <div className="w-20 h-20 bg-gradient-to-br from-blue-600 to-purple-600 dark:from-blue-500 dark:to-purple-500 rounded-full mx-auto mb-6 shadow-lg overflow-hidden">
             <img 
-              src="/jose_logo.png" 
+              src="/manager.png" 
               alt="로고"
-              className="w-12 h-12 object-contain"
+              className="w-full h-full object-cover"
             />
           </div>
           
